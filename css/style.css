@@ -1,0 +1,162 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(#fac4c4, #520ea0);
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo
+{
+    color: aliceblue;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: aliceblue;
+    border-radius: 20px;
+}
+
+header ul li a:hover, header ul li a.active
+{
+    background-color: aliceblue;
+    color: #fac4c4;
+}
+
+section
+{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon
+{
+    mix-blend-mode:screen;
+}
+
+section img#mountains_front
+{
+    z-index: 10;
+}
+
+#text
+{
+    position: absolute;
+    color: aliceblue;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    
+}
+
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: aliceblue;
+    color: #fac4c4;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+.sec 
+{
+    position: relative;
+
+    background: #520ea0;
+}
+
+.sec::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #1c0522, transparent);
+    z-index: 1000;
+}
+
+.sec h2
+{
+    font-size: 2em;
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 20px;
+    padding: 50px;
+}
+
+.sec h3
+{
+    font-size: 1.5em;
+    color: aliceblue;
+    padding: 15px 50px;
+}
+
+.sec p
+{
+    font-size: 1em;
+    color: rgb(236, 224, 232);
+    padding: 0 50px;
+}

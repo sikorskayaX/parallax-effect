@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" alt="stars" id="stars">
+        <img src="img/moon.png" alt="moon" id="moon">
+        <img src="img/mountains_behind.png" alt="mountains_behind" id="mountains_behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="#" id="btn">Explore</a>
+        <img src="img/mountains_front.png" alt="mountains_front" id="mountains_front">
+    </section>
+    <div class="sec">
+        <h2>Parallax scrolling effects</h2>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;
+            Parallax scrolling is a technique in computer graphics where background images move past the camera more 
+            slowly than foreground images, creating an illusion of depth in a 2D scene of distance.
+             The technique grew out of the multiplane camera technique used in traditional animation since the 1930s.
+             Parallax scrolling is a technique in computer graphics where background images move past the camera more slowly than 
+             foreground images, creating an illusion of depth in a 2D scene of distance. The technique grew out of the multiplane 
+             camera technique used in traditional animation since the 1930s.
+             Parallax scrolling was popularized in 2D computer graphics with its introduction to video games in the early 1980s. 
+             Some parallax scrolling was used in the arcade video game Jump Bug (1981). It used a limited form of parallax scrolling w
+             ith the main scene scrolling while the starry night sky is fixed and clouds move slowly, adding depth to the scenery. 
+             The following year, Moon Patrol (1982) implemented a full form of parallax scrolling, with three separate background 
+             layers scrolling at different speeds, simulating the distance between them. Moon Patrol is often credited with popularizing 
+             parallax scrolling. Jungle King (1982), later called Jungle Hunt, also had parallax scrolling,
+              and was released a month after Moon Patrol in June 1982.
+        <h3>Layer method</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;
+            Some display systems support multiple background layers that can be scrolled independently in horizontal and 
+            vertical directions and composited on one another, simulating a multiplane camera. On such a display system, 
+            a game can produce parallax by simply changing each layer's position by a different amount in the same direction. 
+            Layers that move more quickly are perceived to be closer to the virtual camera. Layers can be placed in front of
+             the playfield—the layer containing the objects with which the player interacts—for various 
+            reasons such as to provide increased dimension, obscure some of the action of the game, or distract the player.
+        </p>
+        <h3>Sprite method</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;
+            Programmers may also make pseudo-layers of sprites—individually controllable moving objects drawn 
+            by hardware on top of or behind the layers—if they are available on the display system. For instance Star Force, an
+             overhead-view vertically scrolling shooter for NES, 
+            used this for its starfield, and Final Fight for the Super NES used this technique for the
+             layer immediately in front of the main playfield.The Amiga computer has sprites which can have any
+              height and can be set horizontal with the copper co-processor, which makes them ideal for this purpose.
+              Risky Woods on the Amiga uses sprites multiplexed with the copper to create an 
+              entire fullscreen parallax background layer as an alternative to the system's dual playfield mode.
+        </p>
+        <h3>Repeating pattern/animation method</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;
+            Scrolling displays built up of individual tiles can be made to 'float' over a repeating
+             background layer by animating the individual tiles' bitmaps in order to portray the parallax effect. 
+             Color cycling can be used to animate tiles quickly on the whole screen. This software effect 
+             gives the illusion of another (hardware) layer. Many games used this technique for a scrolling star-field, but sometimes 
+            a more intricate or multi-directional effect is achieved, such as in the game Parallax by Sensible Software.
+        </p>
+        <h3>Raster method</h3>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;
+        In raster graphics, the lines of pixels in an image are typically composited and refreshed in
+         top-to-bottom order with a slight delay (called the horizontal blanking interval) between drawing one 
+         line and drawing the next line. Games designed for older graphical chipsets—such as those of the third 
+         and fourth generations of video game consoles, those of dedicated TV games, 
+        or those of similar handheld systems—take advantage of the raster characteristics to create the illusion of more layers.
+        Some display systems have only one layer. These include most of the classic 8-bit systems
+        (such as the Commodore 64, Nintendo Entertainment System, Master System, PC Engine/TurboGrafx-16 and original Game Boy). 
+        The more sophisticated games on such systems generally divide the layer into horizontal strips, 
+        each with a different position and rate of scrolling. 
+        Typically, strips higher on the screen will represent things farther away from the virtual camera or
+         one strip will be held stationary to display status information. The program will then wait for horizontal 
+         blank and change the layer's scroll position just before the display system begins to draw each scanline.
+         This is called a "raster effect" and is also useful for changing the system palette to provide a gradient background.
+        </p>
+    </div>
+    
+</body>
+</html>
